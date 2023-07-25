@@ -250,7 +250,7 @@ async def inline_button_handler(callback_query: types.CallbackQuery):
         inline_keyboard.add(
             types.InlineKeyboardButton(text="Назад", callback_data="start")
         )
-        del_link = await bot.send_document(callback_query.message.chat.id, f'BQACAgIAAxkBAAImNWS4JYFWmHJMnkdQz_qsfmz03wmyAAL-LwACKjPASQSmylgU9TfLLwQ', caption='короткий текст', reply_markup=inline_keyboard)
+        del_link = await bot.send_document(callback_query.message.chat.id, f'', caption='короткий текст', reply_markup=inline_keyboard)
         await state.update_data(del_link=del_link, parent_back='start')
 
 
