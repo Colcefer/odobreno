@@ -12,7 +12,7 @@ from aiogram.dispatcher.filters.state import StatesGroup, State
 logging.basicConfig(level=logging.DEBUG)
 
 # Set up bot and dispatcher
-bot = Bot(token="5198363111:AAH4LZHDvGjL1S_vLLGLsStxud4gksLscoA")
+bot = Bot(token="")
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=MemoryStorage())
 
